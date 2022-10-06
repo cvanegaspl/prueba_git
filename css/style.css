@@ -1,5 +1,12 @@
 body{
-    background-color: cornflowerblue;
-    color: crimson;
+    background-color: rgb(208, 211, 218);
+    color:darkblue;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container{
+     background-color:seagreen;
+     padding: 10px;
 }
