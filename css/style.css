@@ -1,52 +1,48 @@
 body {
-    height: 1500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: url(https://www.brainpickings.org/wp-content/themes/brainpickings/images/bckgd_body.png);
   }
   
-  .offset {
-    margin-top: 0;
-    padding-top: 270px;
-    text-align: center;
-    transition: .3s;
-  }
-  
-  .header {
-    position: fixed;
-    width: 100%;
-    height: 250px;
-    font-weight: bold;
-    text-align: center;
-    background: gold;
-    transition: .3s;
-    // header shrinks when .small added to .header
-    &.small {
-      height: 70px;
-      box-shadow: 0 0 5px rgba(black, .2);
-      // when header.small also change page offset
-      & ~ .offset {
-        padding-top: 140px;
-      }
-      // when header.small change logo pad & font size
-      .header_logo {
-        padding-top: 20px;
-        font-size: 20px;
-        text-shadow: none;
-      }
-    }
-  }
-  
-  .header_logo {
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-    padding-top: 80px;
-    font-size: 50px;
-    text-shadow: 3px 4px rgba(black, .1);
-    transition: .3s;
-  }
+  header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#252932;
+	margin-bottom:20px;
+}
 
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
 
-.container{
-     background-color:seagreen;
-     padding: 10px;
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:200px;
+	float:left;
+}
 
+header nav {
+	float:right;
+	line-height:200px;
+}
+
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
 }
